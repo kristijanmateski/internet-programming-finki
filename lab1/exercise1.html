@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 1</title>
+	<script type="text/javascript">
+		var number = prompt("Enter a three-digit number:");
+		number = parseInt(number);
+		var c;
+		var reverse=0;
+		var temp=number;
+		while(number>0){
+			c=number%10;
+			reverse=reverse*10+c;
+			number=parseInt(number/10);
+			console.log(typeof(number));
+		}
+		if(reverse==temp){
+			alert("Palindrom");
+		}else{
+			alert("It's not a Palindrom");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

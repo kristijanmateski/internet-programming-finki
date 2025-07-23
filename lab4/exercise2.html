@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 2</title>
+	<style type="text/css">
+		label, input{
+			margin-bottom: 10px;
+		}
+		button{
+			margin-left: 144px;
+			margin-top: 10px;
+		}
+		select#tip{
+			width: 174px;
+		}
+	</style> 
+	<script>
+		function show(){
+			const value=document.getElementById('item').value;
+			const types=document.getElementById('type').value;
+			let values=value.split(',');
+			
+
+			let results=document.getElementById('add');
+
+			for(let i=0;i<values.length;i++){
+				if(types==="radio"){
+					results.innerHTML+=`<input type="radio" name="" value="">`+ values[i];
+				}else{
+					results.innerHTML+=`<input type="checkbox" name="" value="">`+ values[i];
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<label>Items: </label><input type="text" id="item"><br>
+	<label>Type: </label>
+	<select id="type">
+		<option value="radio">Radio button</option>
+		<option value="checkBox">Check box</option>
+	</select><br>
+	<button onclick="show();">Show</button>
+	<div id="add" class="result">
+		
+	</div>
+</body>
+</html>

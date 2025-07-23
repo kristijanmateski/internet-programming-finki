@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <h1>About Me</h1>
+    <ul>
+        <li>Name: <span id="name"></span>
+        <li>Index: <span id="index"></span>
+        <li>Hometown: <span id="hometown"></span>
+    </ul>
+    <script type="text/javascript">
+        let body = document.getElementsByTagName("BODY")[0];
+        body.style.fontFamily='Arial';
+        let ime=document.getElementById('name');
+        ime.innerHTML = 'Name';
+        let index = document.getElementById('index');
+        index.innerHTML = 'Index';
+        let homeTown = document.getElementById('hometown');
+        homeTown.innerText = 'City';
+        let array = document.getElementsByTagName('li');
+        for(let i=0;i<array.length;i++){
+            array[i].style.backgroundColor='red';
+        }
+    </script>
+</body>
+</html>

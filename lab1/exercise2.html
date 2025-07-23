@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 2</title>
+	<script type="text/javascript">
+		var mobileNumber=prompt("Enter mobile number");
+		mobileNumber=parseInt(mobileNumber);
+		let firstPart=parseInt(mobileNumber/1000000);
+		let secondPart=parseInt(mobileNumber/1000)%1000;
+		let thirdPart=parseInt(mobileNumber%1000);
+		let operator;
+		if(firstPart==70||firstPart==71||firstPart==72){
+			alert(`0${firstPart}/${secondPart}-${thirdPart}\nT-Mobile`);
+		}else if(firstPart==75||firstPart==76){
+			alert(`0${firstPart}/${secondPart}-${thirdPart}\nOne`);
+		}else{
+			alert(`0${firstPart}/${secondPart}-${thirdPart}\nVip`);
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

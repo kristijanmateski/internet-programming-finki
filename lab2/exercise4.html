@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+  <style>
+    input{
+      width: 50px;
+      margin-bottom: 15px;
+    }
+    button{
+      display: block;
+      margin-bottom: 15px;
+    }
+  </style>
+  <script>
+    function add(){
+      let first=document.getElementById('first').value;
+      let second=document.getElementById('second').value;
+      let third=document.getElementById('third').value;
+      let fourth=document.getElementById('fourth').value;
+      let total1=0;
+      total1=parseInt(first)+parseInt(third);
+      let result=document.getElementById('result1');
+      result.value=total1;
+      let total2=0;
+      total2=parseInt(second)+parseInt(fourth);
+      let result2=document.getElementById('result2');
+      result2.value=total2;
+    }
+  </script>
+</head>
+<body>
+    <input type="text" id="first">
+    <input type="text" id="second"> and<br>
+    <input type="text" id="third">
+    <input type="text" id="fourth"> and
+
+    <button onclick="add();">Add</button>
+
+    <input type="text" id="result1">
+    <input type="text" id="result2"> and
+</body>
+</html>

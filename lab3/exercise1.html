@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercises 1</title>
+</head>
+<script type="text/javascript">
+	var array=["football","basketball","handball","handball","volleyball","football","football"];
+	alert(array);
+	function deleteDuplicates(array){
+		var temp=[];
+		for(let i=0;i<array.length;i++){
+			if(temp.indexOf(array[i])===-1){
+				temp.push(array[i]);
+			}
+		}
+		return temp;
+	}
+	alert(deleteDuplicates(array));
+</script>
+<body>
+
+</body>
+</html>

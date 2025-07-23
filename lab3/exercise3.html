@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercises 3</title>
+<script type="text/javascript">
+	function cylinder(height,diameter){
+		this.height=height;
+		this.diameter=diameter;
+	}
+	cylinder.prototype.Volumen=function(){
+		let radius = this.diameter/2;
+		return 3.14*radius*radius*this.height;
+	};
+
+	let result= new cylinder(7,9);
+
+	console.log(result.Volumen().toFixed(4));
+</script>
+</head>
+<body>
+
+</body>
+</html>
